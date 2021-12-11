@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Load a font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+
+<body>
+
+    <!-- Top Navbar -->
+    <header class="topnav">
+        <div id="bar">
+        <a href="./Home.html" id="home">HOME</a>
+        <a href="./AboutMe.html" class="hide-small">ABOUT ME</a>
+        <a href="./Projects.html" class="hide-small">PROJECTS</a>
+        <a href="./Photography.html" class="hide-small">PHOTOLIO</a>
+        <a href="./Watercolor.html" class="hide-small">WATERCOLOR</a>
+        <a href="./ContactMe.html" class="hide-small">CONTACT</a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon hide-large">
+            <i id="hambar" class="fa fa-bars"></i>
+        </a>
+        </div>
+
+        <div id="navbar">
+            <a href="./AboutMe.html">ABOUT ME</a>
+            <a href="./Projects.html">PROJECTS</a>
+            <a href="./Photography.html">PHOTOLIO</a>
+            <a href="./Watercolor.html">WATERCOLOR</a>
+            <a href="./ContactMe.html">CONTACT</a>
+        </div>                
+    </header>
+
+    <!-- flexbox with image -->
+    <div class="flexrow">
+        <div class="flexcolumn2">
+            <div style="padding:48px 32px">
+                <h1>ABOUT ME</h1>
+                <p>Hello! I am Sylvia Pan. I had my first master’s in taxation from Fordham University. For the past 6 years, I have been working as fund accountant and am now a manager at SS&C. Working on the programming aspect of a number of SQL and VBA projects inspired my interest in computer science and programming.</p>
+                <p>I am currently in pursuit of my master’s in software development to pivot to a new career in software development.</p>
+                <p>Outside of work and school, I enjoy taking photos and paining watercolor.</p>
+                <p>Looking to contact me? Use <a href="./ContactMe.html"><b>this form</b></a> or <a href="mailto:panxiaoyuns@gmail.com"><b>email me</b></a> at panxiaoyuns@gmail.com. My resume can be found below.</p>
+                
+                <a href="./supports/Resume-Sylvia-Pan.pdf" style="font-size: 25px;">
+                    <p class="fa fa-download"> Resume </p>
+                </a>
+            </div>
+        </div>
+        <div class="flexcolumn">
+            <img src="./images/IMG_6018.JPG" width="100%">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="symbol">
+            <a href="https://github.com/sylviapa" >
+                <i class="fa fa-github hover-opacity"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sylvia-pan-37535597">
+                <i class="fa fa-linkedin hover-opacity"></i>
+            </a>
+        </div>
+        <p class="fa fa-copyright"><b> 2021-present Sylvia Pan</b></p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

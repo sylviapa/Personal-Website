@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Load a font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+
+<body>
+
+    <!-- Top Navbar -->
+    <header class="topnav">
+        <div id="bar">
+        <a href="./Home.html" id="home">HOME</a>
+        <a href="./AboutMe.html" class="hide-small">ABOUT ME</a>
+        <a href="./Projects.html" class="hide-small">PROJECTS</a>
+        <a href="./Photography.html" class="hide-small">PHOTOLIO</a>
+        <a href="./Watercolor.html" class="hide-small">WATERCOLOR</a>
+        <a href="./ContactMe.html" class="hide-small">CONTACT</a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon hide-large">
+            <i id="hambar" class="fa fa-bars"></i>
+        </a>
+        </div>
+
+        <div id="navbar">
+            <a href="./AboutMe.html">ABOUT ME</a>
+            <a href="./Projects.html">PROJECTS</a>
+            <a href="./Photography.html">PHOTOLIO</a>
+            <a href="./Watercolor.html">WATERCOLOR</a>
+            <a href="./ContactMe.html">CONTACT</a>
+        </div>                
+    </header>
+
+  <!-- The Contact Section -->
+    <div class="content2">
+        <h1 style="text-align: center;">CONTACT</h1>
+        <p style="text-align: center;"><i>Drop a note!</i></p>
+
+        <div class="flexrow" style="padding-top:64px; padding-bottom:64px;font-size: 18px;"> 
+            <div class="flexcolumn4"  style="padding-top: 22px;">
+                <div width="100%" style="padding-bottom: 32px;">
+                <img src="./images/SF-2.jpg" width="80%">
+                </div>
+                <i class="fa fa-map-marker" style="width:30px"></i> San Francisco, US<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: panxiaoyuns@mail.com<br>
+            </div>
+
+        <div class="flexcolumn4">
+            <form action="https://formspree.io/f/mdoboegy" method="POST" style="display: block;">
+
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" required="">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" required="">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    <input type="submit" value="Submit">
+                  
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="symbol">
+            <a href="https://github.com/sylviapa" >
+                <i class="fa fa-github hover-opacity"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sylvia-pan-37535597">
+                <i class="fa fa-linkedin hover-opacity"></i>
+            </a>
+        </div>
+        <p class="fa fa-copyright"><b> 2021-present Sylvia Pan</b></p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
