@@ -39,22 +39,20 @@
         </div>                
     </header>
 
-  <!-- The Slider -->
-    <h1>WATERCOLOR</h1>
+    <!-- The Slider -->
+    <div class="content2">
+        <h1 style="text-align: center; margin-bottom: 12px;">WATERCOLOR</h1>
 
-    <div id="app">
-        <div class="slide-show">
-            <div class="slide-img">
-                <img v-bind:src="slides[nowIndex].src" alt="slides[nowIndex].alt">
+        <div id="app">
+            <div>
+                <img v-bind:src="slides[nowIndex].src" alt="slides[nowIndex].alt" width="100%">
             </div>
 
             <ul class="slide-pages">
-                <li @click="goto(preIndex)"></li>
                 <li v-for="(item, index) in slides" @click=goto(index)>
                     <a :class="{on: index === nowIndex}"> {{index + 1}}</a>
                 </li>
             </ul>
-            <li @click="nextIndex"></li>
         </div>
     </div>
 
@@ -64,13 +62,11 @@
             data:{
                 nowIndex:0,
                 slides: [
-                    {src: "./images/IMG_0005.JPG",
+                    {src: "./images/IMG_3848.JPG",
                     },
-                    {src: "./images/IMG_0006.JPG",
+                    {src: "./images/IMG_3853.JPG",
                     },
-                    {src: "./images/IMG_3583.JPG",
-                    },
-                    {src: "./images/IMG_3828.JPG",
+                    {src: "./images/IMG_3854.JPG",
                     },
                 ]
 
