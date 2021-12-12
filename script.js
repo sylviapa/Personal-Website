@@ -1,7 +1,6 @@
 /* Toggle between showing and hiding the navigation menu links */
-window.onload = function () {
-  document.getElementById("hambar").addEventListener("click", getNAV);
-};
+
+document.getElementById("hambar").addEventListener("click", getNAV);
 
 getNAV();
 
