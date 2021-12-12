@@ -1,30 +1,31 @@
+/* Toggle between showing and hiding the navigation menu links */
+window.onload = function () {
+  document.getElementById("hambar").addEventListener("click", getNAV);
+};
 
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-document.getElementById("hambar").addEventListener("click", getNAV);
+getNAV();
 
 function getNAV() {
-    console.log("good");
-    let x = document.getElementById("navbar");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
+  const y = document.getElementById("navbar");
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "block";
   }
-
+}
 
 // Automatic Slideshow - change image every 4 seconds
 let myIndex = 0;
 carousel();
 
 function carousel() {
-    let i;
-    let x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
+  let i;
+  const z = document.getElementsByClassName("mySlides");
+  for (i = 0; i < z.length; i++) {
+    z[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > z.length) { myIndex = 1; }
+  z[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 4000);
 }
