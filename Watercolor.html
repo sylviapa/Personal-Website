@@ -41,7 +41,7 @@
 
     <!-- The Slider -->
     <div class="content2">
-        <h1 style="text-align: center; margin-bottom: 12px;">WATERCOLOR</h1>
+        <h1 style="text-align: center">WATERCOLOR</h1>
 
         <div id="app">
             <div>
@@ -49,9 +49,11 @@
             </div>
 
             <ul class="slide-pages">
+                <li class="fa fa-long-arrow-left" @click="goto(preIndex)"></li>
                 <li v-for="(item, index) in slides" @click=goto(index)>
-                    <a :class="{on: index === nowIndex}"> {{index + 1}}</a>
+                    <a> {{index + 1}}</a>
                 </li>
+                <li class="fa fa-long-arrow-right" @click="goto(nextIndex)"></li>
             </ul>
         </div>
     </div>
